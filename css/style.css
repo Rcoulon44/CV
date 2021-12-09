@@ -24,63 +24,87 @@ Designation des polices
   font-style: normal;
 }
 
+/* Général */
+
 body
 {
   font-family: arial;
+  font-size: 16px;
   color: white;
 }
 
-/* Mise en forme de l'entête du site */
-
-header
-{
-  background: linear-gradient(90deg,  #00305d, #1c38b1);
-  border-radius: 40px;
-  box-shadow: 10px 10px 20px black;
-}
-
-.nom
-{
-  text-align:center;
-  font-size: 4.5em;
-  font-family: 'area', 'arial';
-  font-style: normal;
+h1 {
+  font-family: "area",arial,sans-serif;
+  font-size: 4rem;
   font-weight: bold;
-  padding-top: 30px;
+  margin-top: 20px;
+  margin: auto;
 }
 
-.titre
-{
-  font-size: 2.5em;
-  padding-left: 10%;
+h2 {
+  font-family: "area",arial,sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 10px 40px;
 }
 
-.entête
+a {
+  text-decoration: none;
+}
+
+a:hover
 {
+  color: gray;
+}
+
+.menu {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
-}
-
-.photo_profil
-{
-  width : 300px;
-}
-
-.accroche
-{
-  font-size: 1.6em;
-  text-align: right;
-  min-width: 150px;
-}
-
-.menu
-{
+  justify-content: space-around;
   text-align: center;
   font-size: 1.8em;
   list-style-type: none;
+  padding: 20px 10px;
 }
+
+/* Header */
+
+header {
+  background: linear-gradient(90deg,  #00305d, #1c38b1);
+  border-radius: 0 0 5% 5%;
+  box-shadow: 10px 10px 20px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.entête {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 20px;
+}
+
+#photo_profil {
+  flex: 1;
+  max-width: 150px;
+  min-width: 20%;
+  border-radius: 50%;
+  border : 5px solid white;
+}
+
+.entête p {
+  flex: 4;
+  font-size: 2rem;
+  text-align: center;
+  min-width: 150px;
+}
+
+.menu a {
+  padding: 0px 20px;
+  font-size: 2.5rem;
+}
+/*
 .liste_menu
 {
   display: inline-block;
@@ -91,12 +115,8 @@ header
 {
   color: white;
   text-decoration: none;
-}
+} */
 
-a:hover
-{
-  color: gray;
-}
 
 /* Mise en forme du contenu du site */
 
