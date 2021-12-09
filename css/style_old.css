@@ -1,0 +1,143 @@
+/*
+Description:
+Feuille de style pour la page web de mon CV
+
+auteur : Romain COULON
+email: rcoulon44@gmail.com
+*/
+
+/*
+Designation des polices
+*/
+@font-face {
+  font-family: "area";
+	src: url('fonts/a-area-kilometer-50-font/AreaKilometer50-ow3xB.ttf') format('truetype'),
+      url('fonts/a-area-kilometer-50-font/AreaKilometer50-gxmEq.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@@font-face {
+  font-family: "pixie";
+  src: url('fonts/pro-pixie-font/ProcrastinatingPixie-WyVOO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p
+{
+  font-family: arial;
+  margin-left: 10px;
+}
+
+.nom
+{
+  background-color: #00305d;
+  border-radius: 10px;
+  text-align:center;
+  font-size: 4.5em;
+  font-family: 'pixie', 'area', 'arial';
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  box-shadow: 10px 10px 20px black;
+}
+
+.flottant
+{
+  float: left;
+}
+
+.accroche
+{
+  font-size: 1.8em;
+  text-align: justify;
+}
+
+.menu
+{
+  clear:both;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+a:link
+{
+  color: gray;
+}
+
+a:hover
+{
+  color: gray;
+}
+
+/*h2
+{
+  background-color: #808080;
+  border-radius: 10px;
+  font-size: 2.2em;
+  text-align: center;
+  color: white;
+  box-shadow: 5px 5px 10px black;
+}
+*/
+
+.année
+{
+  color: #00305d;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.postes
+{
+  font-size: 1.3em;
+}
+
+.diplomes
+{
+  font-size: 1.3em;
+}
+
+figure
+{
+  margin: auto;
+}
+
+figcaption
+{
+  text-align: center;
+}
+
+ul
+{
+  font-size: 1.3em
+}
+.experiences
+{
+  background-color: #808080;
+  border-radius: 10px;
+}
+.competences
+{
+  background-color: #04619e;
+  border-radius: 10px;
+  color: white;
+}
+.diplomes
+{
+  background-color: #4c4c4c;
+  border-radius: 10px;
+  color: white;
+}
+.loisirs
+{
+  background-color: #04a2c9;
+  border-radius: 10px;
+  color: white;
+}
+.contact
+{
+  background-color: #00305d;
+  border-radius: 10px;
+  color: white;
+}

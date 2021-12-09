@@ -1,0 +1,225 @@
+/*
+Description:
+Feuille de style pour la page web de mon CV
+
+auteur : Romain COULON
+email: rcoulon44@gmail.com
+*/
+
+/* Resest CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+Designation des polices
+*/
+@font-face {
+  font-family: "area";
+	src: url('fonts/a-area-kilometer-50-font/AreaKilometer50-ow3xB.ttf') format('truetype'),
+      url('fonts/a-area-kilometer-50-font/AreaKilometer50-gxmEq.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body
+{
+  font-family: arial;
+  color: white;
+}
+
+/* Mise en forme de l'entête du site */
+
+header
+{
+  background: linear-gradient(90deg,  #00305d, #1c38b1);
+  border-radius: 40px;
+  box-shadow: 10px 10px 20px black;
+}
+
+.nom
+{
+  text-align:center;
+  font-size: 4.5em;
+  font-family: 'area', 'arial';
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.titre
+{
+  font-size: 2.5em;
+  padding-left: 10%;
+}
+
+.entête
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photo_profil
+{
+  width : 300px;
+}
+
+.accroche
+{
+  font-size: 1.6em;
+  text-align: right;
+  min-width: 150px;
+}
+
+.menu
+{
+  text-align: center;
+  font-size: 1.8em;
+  list-style-type: none;
+}
+.liste_menu
+{
+  display: inline-block;
+  margin:  0 10px 0 10px;
+  padding: 5px;
+}
+.anchor_menu
+{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: gray;
+}
+
+/* Mise en forme du contenu du site */
+
+.corp
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.experiences
+{
+  background-color: #808080;
+  border-radius: 20px;
+  width: 68%;
+  min-width: 400px;
+  order : 2;
+  margin-top: 20px;
+}
+
+.competences
+{
+  background-color: #04619e;
+  border-radius: 20px;
+  width: 28%;
+  min-width: 300px;
+  order: 1;
+  margin-top: 20px;
+}
+
+.diplomes
+{
+  background-color: #4c4c4c;
+  border-radius: 20px;
+  width: 68%;
+  min-width: 400px;
+  order : 4;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.loisirs
+{
+  background-color: #04a2c9;
+  border-radius: 20px;
+  width: 28%;
+  min-width: 300px;
+  order: 3;
+  margin-top: 20px;
+}
+
+#experiences,#competences,#diplomes,#loisirs
+{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'area', 'arial';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.année
+{
+  color: #00305d;
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 20px;
+  text-decoration: underline;
+}
+
+ul
+{
+  font-size: 1.8em;
+}
+
+p
+{
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+
+.postes
+{
+  font-size: 1.6em;
+}
+
+/* Mise en forme pour le porte folio */
+
+#porte_folio
+{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'area', 'arial';
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+}
+
+figure
+{
+  text-align: center;
+}
+
+/* Mise en page du pied de page */
+
+footer
+{
+  background-color: #00305d;
+  border-radius: 20px 20px 0px 0px;
+  height: 270px;
+}
+
+#contact
+{
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 2em;
+  font-family: 'area', 'arial';
+  font-style: normal;
+  font-weight: bold;
+}
+
+a
+{
+  color: white;
+}
