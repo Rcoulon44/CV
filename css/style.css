@@ -37,15 +37,22 @@ h1 {
   font-family: "area",arial,sans-serif;
   font-size: 4rem;
   font-weight: bold;
-  margin-top: 20px;
-  margin: auto;
 }
 
 h2 {
   font-family: "area",arial,sans-serif;
   font-size: 3rem;
   font-weight: normal;
-  margin: 10px 40px;
+}
+
+ul
+{
+  font-size: 1.8rem;
+}
+
+p
+{
+  font-size: 1.2rem;
 }
 
 a {
@@ -73,31 +80,25 @@ header {
   background: linear-gradient(90deg,  #00305d, #1c38b1);
   border-radius: 0 0 5% 5%;
   box-shadow: 10px 10px 20px black;
-  display: flex;
-  flex-direction: column;
 }
 
-.entête {
+.header_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px 20px;
+  padding: 30px;
 }
 
 #photo_profil {
-  flex: 1;
-  max-width: 150px;
-  min-width: 20%;
+  max-width: 200px;
+  width: 20%;
   border-radius: 50%;
   border : 5px solid white;
 }
 
-.entête p {
-  flex: 4;
-  font-size: 2rem;
-  text-align: center;
-  min-width: 150px;
+.nom {
+  align-self: flex-start;
 }
 
 .menu a {
@@ -187,16 +188,6 @@ header {
   text-decoration: underline;
 }
 
-ul
-{
-  font-size: 1.8em;
-}
-
-p
-{
-  padding-left: 20px;
-  font-size: 1.2em;
-}
 
 .postes
 {
