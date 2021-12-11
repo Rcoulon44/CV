@@ -52,11 +52,16 @@ ul
 
 p
 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+li {
+  padding: 10px 20px;
 }
 
 a:hover
@@ -78,7 +83,7 @@ a:hover
 
 header {
   background: linear-gradient(90deg,  #00305d, #1c38b1);
-  border-radius: 0 0 5% 5%;
+  border-radius: 0 0 50px 50px;
   box-shadow: 10px 10px 20px black;
 }
 
@@ -105,48 +110,47 @@ header {
   padding: 0px 20px;
   font-size: 2.5rem;
 }
-/*
-.liste_menu
-{
-  display: inline-block;
-  margin:  0 10px 0 10px;
-  padding: 5px;
-}
-.anchor_menu
-{
-  color: white;
-  text-decoration: none;
-} */
 
 
 /* Mise en forme du contenu du site */
 
-.corp
+main
 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 50px;
-}
-
-.experiences
-{
-  background-color: #808080;
-  border-radius: 20px;
-  width: 68%;
-  min-width: 400px;
-  order : 2;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .competences
 {
   background-color: #04619e;
-  border-radius: 20px;
+  border-radius: 30px;
   width: 28%;
   min-width: 300px;
-  order: 1;
-  margin-top: 20px;
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.competences li:before , .loisirs li::before {
+  content: 'arrow_right';
+  font-family: 'Material Icons';
+  font-size: 40px;
+  vertical-align: -25%;
+}
+
+.experiences
+{
+  background-color: #808080;
+  border-radius: 30px;
+  width: 68%;
+  min-width: 400px;
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.experiences p {
+  margin: 10px 20px 10px 50px;
 }
 
 .diplomes
@@ -155,9 +159,9 @@ header {
   border-radius: 20px;
   width: 68%;
   min-width: 400px;
-  order : 4;
-  margin-top: 20px;
   font-size: 1.2em;
+  margin: 20px 0px;
+  padding: 10px;
 }
 
 .loisirs
@@ -166,8 +170,8 @@ header {
   border-radius: 20px;
   width: 28%;
   min-width: 300px;
-  order: 3;
-  margin-top: 20px;
+  margin: 20px 0px;
+  padding: 10px;
 }
 
 #experiences,#competences,#diplomes,#loisirs
@@ -177,6 +181,7 @@ header {
   font-family: 'area', 'arial';
   font-style: normal;
   font-weight: bold;
+  padding: 20px 0px;
 }
 
 .année
@@ -211,26 +216,27 @@ figure
   text-align: center;
 }
 
-/* Mise en page du pied de page */
+/* Footer */
 
 footer
 {
   background-color: #00305d;
-  border-radius: 20px 20px 0px 0px;
-  height: 270px;
+  border-radius: 50px 50px 0px 0px;
+  padding: 5px 20px;
+}
+.contact{
+  padding-bottom: 50px;
 }
 
 #contact
 {
-  padding-left: 20px;
-  padding-top: 20px;
   font-size: 2em;
   font-family: 'area', 'arial';
   font-style: normal;
   font-weight: bold;
+  padding: 2% 2%;
 }
 
-a
-{
-  color: white;
+footer p{
+  padding: 10px;
 }
