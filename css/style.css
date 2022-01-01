@@ -71,7 +71,7 @@ a:hover
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   text-align: center;
   font-size: 1.8em;
@@ -239,4 +239,40 @@ footer
 
 footer p{
   padding: 10px;
+}
+
+
+/* Media query rules for smartphone navigation */
+
+@media screen and (max-width: 1400px) {
+  .menu{
+    flex-direction: column;
+  }
+  #photo_profil{
+    order: 1;
+  }
+  .nom{
+    order: 2;
+  }
+  .texte_header{
+    order: 3;
+  }
+  main{
+    flex-direction: column;
+  }
+  .competences, .experiences, .diplomes, .loisirs{
+    width: 100%;
+  }
+  .experiences{
+    order: 1;
+  }
+  .competences{
+    order: 2;
+  }
+  .diplomes{
+    order: 3;
+  }
+  .loisirs{
+    order: 4;
+  }
 }
